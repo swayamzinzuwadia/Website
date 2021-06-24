@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <style>
+            table,th{
+                border: 5px;
+                padding:5px;
+                border-color: orangered;
+                border-collapse: collapse;
+            }
+        </style>
+        <style>
+            h1,form{
+                font-family: 'Times New Roman';
+            }            
+        </style>
+        <script>
+                function sub(){
+                    alert("The mail was received and we will revert back soon");
+                }
+                function res(){
+                    alert("The mail will reset to default, Do you want to continue?")
+                }
+                function cart(){
+                    alert("The product was added to cart")
+                    a++;
+                }
+        </script>
+        <title>Vaccum Cleaner</title>
+    </head>
+    <body>
+        <table width="100%" height=180%>
+            
+            <tr height=10 style="background-color: black;"> 
+                <th><a href="main.html" style="background-color: black;color:orangered;">Home</a></th>
+                <th><a href="cart.html" style="background-color: black; color: orangered;">Go To Cart</a></th>        
+            </tr>
+        
+            <tr>
+                <td>
+                    <img src="vaccum_cleaner.jpeg" alt="Tv" height="300" width="300">
+                </td>
+                <td style="color: black;">
+                    <em><b>Vaccum Cleaner</b></em> This is a very special vaccum cleaner as it can clean all<br>
+                    types of surfaces like marbel,granite,normal tiles,as well as carpets so it can easily <br>
+                    your house. 
+                    <br><br>
+                    <strong>Offers available:</strong>
+                    <ul>
+                        <li>No cost emi starting at 1000/-</li>
+                        <li>Bank credit card and debit cards will avail different offers</li>
+                        <li>Promo codes can be applied during checkout</li>
+                    </ul> 
+                    <b>Limited stock available ! Hurry up order now! </b>
+                    <p align="middle" style="color: red; font-size: x-large;"><b>Price: RS.8000</b></p>
+                    <p align="middle" style="color: red;font-size: larger;">MRP:<strike>RS.10000</strike></p>
+                    
+                    <input align="center" type="button" value="Buy now">    
+                    <input align="center" type="button" value="Add to cart" onclick="cart()">
+                </td>
+            </tr>
+            
+            <tr>
+                <td colspan="2">
+                    <h1 align=middle>Contact us</h1>
+                    <form onsubmit ="sub()" onreset="res()" align=middle>
+                        Email us: 
+                        <input type="text" value=""><br><br>
+                        write a feedback: <br>
+                        <textarea cols="50" rows="10">
+                        </textarea>
+                        <br><br>
+                        <input type="submit" value="Send the mail">
+                        <input type="reset" value="Reset the mail">
+                    </form>
+
+
+                </td>
+            </tr>
+        </table>
+        
+    </body>
+</html>

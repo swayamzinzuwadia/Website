@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <style>
+            table,th{
+                border: 5px;
+                padding:5px;
+                border-color: orangered;
+                border-collapse: collapse;
+            }
+        </style>
+        <style>
+            h1,form{
+                font-family: 'Times New Roman';
+            }            
+        </style>
+        <script>
+                function sub(){
+                    alert("The mail was received and we will revert back soon");
+                }
+                function res(){
+                    alert("The mail will reset to default, Do you want to continue?")
+                }
+                function cart(){
+                    alert("The product was added to cart")
+                    a++;
+                }
+        </script>
+        <title>Dell Laptop</title>
+    </head>
+    <body>
+        <table width="100%" height=180%>
+            
+            <tr height=10 style="background-color: black;"> 
+                <th><a href="main.html" style="background-color: black;color:orangered;">Home</a></th>
+                <th><a href="cart.html" style="background-color: black; color: orangered;">Go To Cart</a></th>        
+            </tr>
+        
+            <tr>
+                <td>
+                    <img src="dell_laptop.jpg" alt="Laptops" height="45%" width="100%">
+                </td>
+                <td style="color: black;">
+                    <em><b>Dell laptop inspiron 15 3000</b></em> This a premium laptop with matt finishing<br> 
+                    This laptop has a backlit keyboard and is suitable for professional users<br><br>
+                    <strong>Specifications are as follows:</strong><br>
+                    <ul type="square">
+                    <li>8GB RAM(Random Access Memory)</li>
+                    <li>256GB SSD(Solid State Drive)</li>
+                    <li>1TB HDD</li>    
+                    </ul>
+                    <b>We have 2 colours available:</b><br>
+                    <ul>
+                        <li>Black</li>
+                        <li>Silver</li>
+                    </ul>
+                    <strong>Offers available:</strong>
+                    <ul>
+                        <li>No cost emi starting at 4000/-</li>
+                        <li>Bank credit card and debit cards will avail different offers</li>
+                        <li>Promo codes can be applied during checkout</li>
+                    </ul> 
+                    <b>Limited stock available ! Hurry up order now! </b>
+                    <p align="middle" style="color: red; font-size: x-large;"><b>Price: RS. 40000</b></p>
+                    <p align="middle" style="color: red;font-size: larger;">MRP:<strike>RS.45000</strike></p>
+                    
+                    <input align="center" type="button" value="Buy now">    
+                    <input align="center" type="button" value="Add to cart" onclick="cart()">
+                </td>
+            </tr>
+            
+            <tr>
+                <td colspan="2">
+                    <h1 align=middle>Contact us</h1>
+                    <form onsubmit ="sub()" onreset="res()" align=middle>
+                        Email us: 
+                        <input type="text" value=""><br><br>
+                        write a feedback: <br>
+                        <textarea cols="50" rows="10">
+                        </textarea>
+                        <br><br>
+                        <input type="submit" value="Send the mail">
+                        <input type="reset" value="Reset the mail">
+                    </form>
+
+
+                </td>
+            </tr>
+        </table>
+        
+    </body>
+</html>

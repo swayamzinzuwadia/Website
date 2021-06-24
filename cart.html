@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <style>
+            table,th,td{
+                border: 5px;
+                padding:5px;
+                border-color: orangered;
+                border-collapse: collapse;
+        
+            }
+        </style>
+        <script>
+            function buy(){
+                alert("Checking out");
+                document.write("The products kept in your cart will be dispatched soon to the address you entered and the bill will be mailed to you on your mail address and promocode is been checked ");
+            }
+        </script>
+        <title>Cart/Chekout</title>
+    </head>
+    <body>
+        <table bgcolor="black">
+            <tr bgcolor="black" colspan="2">
+                <th> 
+                    <a href="main.html" align="middle" style="color: orangered;"> ---Back To Home---</a>
+                </th>
+            
+        </tr>
+        </table>
+        <hr>
+        <h2 align=middle>Checkout</h2>
+        <form action="#" align="middle">
+            Enter your name:
+            <input type="text" name="Name"><br><br>
+            Enter your address: <br>
+            <textarea cols="50" rows="10">
+            </textarea><br><br>
+            Enter your state: <input type="text" name="state"><br><br>
+            Enter your pincode: <input type="text" name="pincode"><br><br>
+            Enter your email id: <input type="email" name="mail"><br><br>
+            Enter your password:  <input type="password" name="password" ><br><br> 
+            Enter promocode if you have any: <input type="text"><br><br>
+            <input type="checkbox" name="Cash on delivery"> Cash on delivery <br><br>
+            <input type="button" value="Buy the items available in your cart" onclick="buy()">
+        </form>
+        
+    </body>
+</html>
